@@ -1,2 +1,20 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script lang="ts">
+	let { data } = $props();
+</script>
+
+<h1>Users</h1>
+
+<form method="POST">
+	<label for="username">Username</label>
+	<input type="text" name="username" id="username" />
+	<button>Send</button>
+</form>
+
+<ul>
+	{#each data.users as user}
+		<li>
+			<span> {user.id} </span>
+			<span> {user.username} </span>
+		</li>
+	{/each}
+</ul>

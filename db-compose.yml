@@ -1,0 +1,26 @@
+services:
+  db:
+    container_name: ${DB_NAME}
+    image: postgres:15.1
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+    ports:
+      - ${DB_PORT}:5432
+
+  pgadmin:
+    depends_on:
+      - db
+    container_name: pgadmin_bpc
+    image: dpage/pgadmin4:8
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=${PG_EMAIL}
+      - PGADMIN_DEFAULT_PASSWORD=${PG_PASSWORD}
+    ports:
+      - 80:80
+
+volumes:
+  pgdata:
