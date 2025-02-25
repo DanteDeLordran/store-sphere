@@ -1,3 +1,8 @@
+<svelte:head>
+	<title>Store Sphere | Home</title>
+	<meta name="description" content="Home" />
+</svelte:head>
+
 <!-- Hero Section -->
 <section class="bg-gradient-to-r from-blue-600 to-purple-600 py-20 text-white">
 	<div class="container mx-auto px-4 text-center">
