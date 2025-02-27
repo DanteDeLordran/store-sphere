@@ -1,39 +1,50 @@
-# sv
+# Store Sphere
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+**Store Sphere** is an open-source file storage solution built with **SvelteKit**. It allows users to organize their files into buckets, manage objects securely, and monitor their storage usage through an intuitive dashboard. Whether you're an individual or a team, Store Sphere makes file management simple and efficient.
 
-## Creating a project
+---
 
-If you're seeing this, you've probably already done this step. Congrats!
+## ✨ Features
 
-```bash
-# create a new project in the current directory
-npx sv create
+- **User-Friendly Dashboard**: Monitor your storage usage, view recent activity, and manage your buckets effortlessly.
+- **Secure File Storage**: Each bucket can be protected with a password for added security.
+- **Public & Private Buckets**: Share files publicly via a URL or keep them private by default.
+- **Object Management**: Upload, download, and delete objects with ease.
+- **Bucket Transfers**: Transfer buckets and objects to other users seamlessly.
+- **Compression & UUIDs**: Objects are compressed and assigned unique IDs for efficient storage and retrieval.
 
-# create a new project in my-app
-npx sv create my-app
-```
+---
 
-## Developing
+## 🚀 Getting Started
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### Prerequisites
 
-```bash
-npm run dev
+- Bun (v1.2 or higher)
+- Docker
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+---
 
-## Building
+## 📄 License
 
-To create a production version of your app:
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
-```bash
-npm run build
-```
+---
 
-You can preview the production build with `npm run preview`.
+## 🙏 Acknowledgments
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
-# store-sphere
+- **SvelteKit** for providing a powerful framework for building web applications.
+- **Tailwind CSS** for making styling a breeze.
+- **PostgreSQL** for powerful and efficient database management.
+
+---
+
+## 📧 Contact
+
+Have questions or feedback? Feel free to reach out:
+
+- **Email**: dantelopez305@outlook.com
+- **GitHub Issues**: [Open an Issue](https://github.com/DanteDeLordran/store-sphere/issues)
+
+---
+
+Thank you for checking out **Store Sphere**! We hope it simplifies your file storage needs. 🌟
