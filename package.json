@@ -1,10 +1,10 @@
 {
 	"name": "store-sphere",
 	"private": true,
-	"version": "0.0.1",
+	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
-		"dev": "vite dev",
+		"dev": "bun run format && bun run lint && vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
@@ -12,8 +12,8 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
-		"db:start": "docker compose up",
-		"db:push": "drizzle-kit push",
+		"db:start": "docker-compose -f db-compose.yml up",
+		"db:generate": "drizzle-kit generate",
 		"db:migrate": "drizzle-kit migrate",
 		"db:studio": "drizzle-kit studio"
 	},
